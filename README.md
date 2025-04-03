@@ -55,6 +55,11 @@ npx hardhat ignition deploy ignition/modules/voting.ts --network monadTestnet
 npx hardhat ignition deploy ignition/modules/<XXXX.ts> --network monadTestnet --reset
 ```
 
+### 🔆 依次部署这些智能合约
+```bash
+chmod +x deploy_contracts.sh && ./deploy_contracts.sh
+```
+
 ### ✅ 使用 Sourcify 验证合约
 部署完成后，可使用以下命令验证合约：
 ```bash
