@@ -10,8 +10,8 @@ const config: HardhatUserConfig = {
     version: "0.8.28",
     settings: {
       metadata: {
-        bytecodeHash: "none", // disable ipfs
-        useLiteralContent: true, // use source code
+        bytecodeHash: "none", // 禁用 ipfs
+        useLiteralContent: true, // 使用源代码
       },
     },
   },
@@ -27,7 +27,7 @@ const config: HardhatUserConfig = {
     apiUrl: "https://sourcify-api-monad.blockvision.org",
     browserUrl: "https://testnet.monadexplorer.com",
   },
-  // To avoid errors from Etherscan
+  // 避免 Etherscan 的错误
   etherscan: {
     enabled: false,
   },

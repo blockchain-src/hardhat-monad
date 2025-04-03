@@ -3,7 +3,6 @@ node_modules
 
 # Hardhat files
 /cache
-/artifacts
 
 # TypeChain files
 /typechain
@@ -13,5 +12,7 @@ node_modules
 /coverage
 /coverage.json
 
-# Hardhat Ignition default folder for deployments against a local node
+# Hardhat Ignition 针对本地节点进行部署的默认文件夹
 ignition/deployments/chain-31337
+
+导航.md
