@@ -4,9 +4,7 @@
 
 ### 🚀 1️⃣ 更新系统并安装必要的软件
 ```bash
-sudo apt update && sudo apt upgrade -y
-sudo apt install -y git xclip python3-pip
-sudo pip3 install requests
+sudo apt upgrade -y && sudo apt install git xclip python3-pip && sudo pip3 install requests
 ```
 
 ### 🌍 2️⃣ 安装 Node.js 和 npm（如果已安装请跳过）
