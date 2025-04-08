@@ -18,16 +18,21 @@ LOG_FILE="deployment_log.txt"
 echo "🚀 开始部署智能合约到 $NETWORK..." | tee -a "$LOG_FILE"
 
 for contract in "${!contracts[@]}"; do
-    echo "\n⏳ 正在部署 $contract 合约..." | tee -a "$LOG_FILE"
+    # 分隔线 + 合约提示
+    printf "\n-------------------------------------------------------\n" | tee -a "$LOG_FILE"
+    echo "⏳ 正在部署 $contract 合约..." | tee -a "$LOG_FILE"
+
+    # 执行部署命令并记录日志
     npx hardhat ignition deploy "${contracts[$contract]}" --network "$NETWORK" 2>&1 | tee -a "$LOG_FILE"
     
+    # 检查部署是否成功
     if [ "${PIPESTATUS[0]}" -eq 0 ]; then
         echo "✅ $contract 合约部署成功!" | tee -a "$LOG_FILE"
     else
         echo "❌ $contract 合约部署失败，跳过..." | tee -a "$LOG_FILE"
         continue
     fi
-
 done
 
-echo "🎉 所有合约部署完成!" | tee -a "$LOG_FILE"
+# 最后提示
+printf "\n🎉 所有合约部署完成!\n" | tee -a "$LOG_FILE"

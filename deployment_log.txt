@@ -1,0 +1,109 @@
+🚀 开始部署智能合约到 monadTestnet...
+\n⏳ 正在部署 NFT 合约...
+[?25l[2K[1G[36m?[39m [1mConfirm deploy to network monadTestnet (10143)?[22m [90m›[39m [90m(y/N)[39m[2K[1G[2K[1G[32m✔[39m [1mConfirm deploy to network monadTestnet (10143)?[22m [90m…[39m yes
+[?25hHardhat Ignition starting for [ NFTModule ]...[2K[1G[ NFTModule ] reconciliation failed ⛔
+
+The module contains changes to executed futures:
+
+NFTModule#MyNFT:
+ - Argument at index 1 has been changed
+
+Consider modifying your module to remove the inconsistencies with deployed futures.
+❌ NFT 合约部署失败，跳过...
+\n⏳ 正在部署 Voting 合约...
+[?25l[2K[1G[36m?[39m [1mConfirm deploy to network monadTestnet (10143)?[22m [90m›[39m [90m(y/N)[39m[2K[1G[2K[1G[32m✔[39m [1mConfirm deploy to network monadTestnet (10143)?[22m [90m…[39m yes
+[?25hHardhat Ignition starting for [ VotingModule ]...[2K[1GHardhat Ignition 🚀
+
+Resuming existing deployment from ./ignition/deployments/chain-10143
+
+Deploying [ VotingModule ]
+
+Warning - previously executed futures are not in the module:
+ - NFTModule#MyNFT
+
+Batch #1
+  Executing VotingModule#Voting...
+
+[3A[0JBatch #1
+  Executing VotingModule#Voting...
+
+[3A[0JBatch #1
+  Executed VotingModule#Voting
+
+[3A[0JBatch #1
+  Executed VotingModule#Voting
+
+[ VotingModule ] successfully deployed 🚀
+
+Deployed Addresses
+
+NFTModule#MyNFT - 0xCB10C29ebBa32f638DeF5B0F9B49B7f0c0962865
+VotingModule#Voting - 0x1Cf586b12D2f443F2FDD9B369634bAA290194a0b
+✅ Voting 合约部署成功!
+\n⏳ 正在部署 Lock 合约...
+[?25l[2K[1G[36m?[39m [1mConfirm deploy to network monadTestnet (10143)?[22m [90m›[39m [90m(y/N)[39m[2K[1G[2K[1G[32m✔[39m [1mConfirm deploy to network monadTestnet (10143)?[22m [90m…[39m yes
+[?25hHardhat Ignition starting for [ LockModule ]...[2K[1GHardhat Ignition 🚀
+
+Resuming existing deployment from ./ignition/deployments/chain-10143
+
+Deploying [ LockModule ]
+
+Warning - previously executed futures are not in the module:
+ - NFTModule#MyNFT
+ - VotingModule#Voting
+
+Batch #1
+  Executing LockModule#Lock...
+
+[3A[0JBatch #1
+  Executing LockModule#Lock...
+
+[3A[0JBatch #1
+  Executed LockModule#Lock
+
+[3A[0JBatch #1
+  Executed LockModule#Lock
+
+[ LockModule ] successfully deployed 🚀
+
+Deployed Addresses
+
+NFTModule#MyNFT - 0xCB10C29ebBa32f638DeF5B0F9B49B7f0c0962865
+VotingModule#Voting - 0x1Cf586b12D2f443F2FDD9B369634bAA290194a0b
+LockModule#Lock - 0x340f142A58a23275A3334b742e50886570681511
+✅ Lock 合约部署成功!
+\n⏳ 正在部署 ERC20 合约...
+[?25l[2K[1G[36m?[39m [1mConfirm deploy to network monadTestnet (10143)?[22m [90m›[39m [90m(y/N)[39m[2K[1G[2K[1G[32m✔[39m [1mConfirm deploy to network monadTestnet (10143)?[22m [90m…[39m yes
+[?25hHardhat Ignition starting for [ MyTokenModule ]...[2K[1GHardhat Ignition 🚀
+
+Resuming existing deployment from ./ignition/deployments/chain-10143
+
+Deploying [ MyTokenModule ]
+
+Warning - previously executed futures are not in the module:
+ - NFTModule#MyNFT
+ - VotingModule#Voting
+ - LockModule#Lock
+
+Batch #1
+  Executing MyTokenModule#MyToken...
+
+[3A[0JBatch #1
+  Executing MyTokenModule#MyToken...
+
+[3A[0JBatch #1
+  Executed MyTokenModule#MyToken
+
+[3A[0JBatch #1
+  Executed MyTokenModule#MyToken
+
+[ MyTokenModule ] successfully deployed 🚀
+
+Deployed Addresses
+
+NFTModule#MyNFT - 0xCB10C29ebBa32f638DeF5B0F9B49B7f0c0962865
+VotingModule#Voting - 0x1Cf586b12D2f443F2FDD9B369634bAA290194a0b
+LockModule#Lock - 0x340f142A58a23275A3334b742e50886570681511
+MyTokenModule#MyToken - 0x4A3d81E42fb284F20594C5913AfA2ec5D42FfE25
+✅ ERC20 合约部署成功!
+🎉 所有合约部署完成!
